@@ -4,12 +4,22 @@ Publisher: Vibrant Color Development
 BC Version: 26.0.0.0
 Prefix: VCD
 
-## Kom i gang
+## Beskrivelse
+<!-- Kort beskrivelse af hvad appen gør — udfyldes af Claude -->
 
-1. Udfyld `APP_REQUEST.md` med beskrivelse af hvad appen skal gøre
-2. Giv Claude adgang til repoet
-3. Claude læser request, stiller afklarende spørgsmål og udfylder `PROJECT.md`
-4. Koding begynder
+## Installation
+
+1. Download `.app` filen fra [Releases](../../releases)
+2. Upload i BC: **Udvidelsesstyring → Overfør udvidelse**
+3. Se `DOCS.md` for opsætningsvejledning
+
+## Publish til BC (udvikling)
+
+```powershell
+# Via VS Code: F5
+# Via PowerShell:
+Publish-NAVApp -ServerInstance BC -Path *.app -SkipVerification
+```
 
 ## Struktur
 
@@ -19,12 +29,11 @@ src/           AL kode
 app.json       App manifest
 APP_REQUEST.md Beskriv hvad du ønsker
 PROJECT.md     Teknisk spec (udfyldes af Claude)
+DOCS.md        Brugerdokumentation (udfyldes af Claude)
 ```
 
-## Publish til BC
+## Versioner
 
-```powershell
-# Via VS Code: F5
-# Via PowerShell:
-Publish-NAVApp -ServerInstance BC -Path *.app -SkipVerification
-```
+| Version | Dato | Ændringer |
+|---------|------|-----------|
+| 1.0.0.0 | | Første version |

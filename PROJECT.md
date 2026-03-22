@@ -7,6 +7,8 @@ _Dette dokument udfyldes af Claude efter gennemgang af APP_REQUEST.md_
 - [ ] Afklaring gennemført
 - [ ] Teknisk spec godkendt
 - [ ] Koding startet
+- [ ] README opdateret
+- [ ] Dokumentation skrevet (DOCS.md)
 - [ ] Klar til test
 - [ ] Leveret
 
